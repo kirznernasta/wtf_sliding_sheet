@@ -607,7 +607,7 @@ class _SlidingSheetState extends State<SlidingSheet>
       final RenderBox? footer =
           footerKey.currentContext?.findRenderObject() as RenderBox?;
 
-      final previousMaxExtend =
+      final previousMaxExtent =
           isLaidOut ? (sheetHeight / availableHeight).clamp(0.0, 1.0) : 1.0;
 
       final isChildLaidOut = child?.hasSize == true;
@@ -626,7 +626,7 @@ class _SlidingSheetState extends State<SlidingSheet>
           (childHeight != prevChildHeight ||
               headerHeight != prevHeaderHeight ||
               footerHeight != prevFooterHeight)) {
-        _updateSnappingsAndExtent(previousMaxExtend: previousMaxExtend);
+        _updateSnappingsAndExtent(previousMaxExtent: previousMaxExtent);
         setState(() {});
       }
     });
@@ -703,7 +703,7 @@ class _SlidingSheetState extends State<SlidingSheet>
     }
   }
 
-  void _updateSnappingsAndExtent({num? previousMaxExtend}) {
+  void _updateSnappingsAndExtent({num? previousMaxExtent}) {
     snappings = snapSpec.snappings.map(_normalizeSnap).toList()..sort();
 
     if (extent != null) {
@@ -717,10 +717,10 @@ class _SlidingSheetState extends State<SlidingSheet>
         ..maxExtent = maxExtent
         ..minExtent = minExtent;
 
-      final isCurrentPreviousMaxExtend = previousMaxExtend != null &&
-          (currentExtent - previousMaxExtend).abs() < 0.01;
+      final isCurrentPreviousMaxExtent = previousMaxExtent != null &&
+          (currentExtent - previousMaxExtent).abs() < 0.01;
 
-      if (currentExtent > maxExtent || isCurrentPreviousMaxExtend) {
+      if (currentExtent > maxExtent || isCurrentPreviousMaxExtent) {
         currentExtent = maxExtent;
       }
     }
