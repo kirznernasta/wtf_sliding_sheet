@@ -211,11 +211,10 @@ packages:
   wtf_sliding_sheet:
     dependency: "direct main"
     description:
-      name: wtf_sliding_sheet
-      sha256: "518772ea0fb602c7e59a84b0ac8269d8e53a3abd0c7a650ca3fe85090aa13578"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.6.1"
+      path: ".."
+      relative: true
+    source: path
+    version: "0.6.2"
 sdks:
   dart: ">=2.19.0 <3.0.0"
   flutter: ">=2.5.0"
