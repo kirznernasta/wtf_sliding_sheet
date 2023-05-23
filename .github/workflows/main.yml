@@ -26,5 +26,5 @@ jobs:
 
       - name: Pana check
         run: |
-          chmod +x pana_check.sh
+          chmod +x ./scripts/pana_check.sh
           ./scripts/pana_check.sh
