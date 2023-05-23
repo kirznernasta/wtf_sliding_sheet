@@ -22,4 +22,4 @@ jobs:
         run: flutter analyze
 
       - name: Pana check
-        run: /scripts/pana_check.sh
+        run: ${{ env.GITHUB_WORKSPACE }}/scripts/pana_check.sh
