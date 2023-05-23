@@ -25,6 +25,4 @@ jobs:
         run: flutter analyze
 
       - name: Pana check
-        run: |
-          chmod +x ./scripts/pana_check.sh
-          ./scripts/pana_check.sh
+        run: ./scripts/pana_check.sh
