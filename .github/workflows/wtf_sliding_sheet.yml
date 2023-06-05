@@ -1,0 +1,28 @@
+name: WTF Sliding Sheet CI/CD
+
+on:
+  push:
+    branches:
+  pull_request:
+    branches:
+
+jobs:
+  analyze:
+    name: Analyze and pana check
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.x'
+          channel: 'stable'
+
+      - name: Analyzing
+        run: flutter analyze
+
+      - name: Pana check
+        run: |
+          dart pub global activate pana
+          pana --exit-code-threshold 10 --no-warning
