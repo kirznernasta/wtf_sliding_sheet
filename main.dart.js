@@ -44348,7 +44348,7 @@ Te(a){var s,r=this,q=null
 r.a.toString
 s=r.gXB()
 r.a.toString
-return new A.xh(q,q,q,new A.a7I(),q,q,q,q,q,B.Ae,B.ES,q,q,B.Cq,r.gXJ(),"Example App",q,B.J5,B.cX,q,s,q,q,B.kl,!1,!1,!1,!1,r.gXh(),!1,q,q,q,new A.j8(r,t.bT))},
+return new A.xh(q,q,q,new A.a7I(),q,q,q,q,q,B.Ae,B.ES,q,q,B.Cq,r.gXJ(),"wtf_sliding_sheet demo",q,B.J5,B.cX,q,s,q,q,B.kl,!1,!1,!1,!1,r.gXh(),!1,q,q,q,new A.j8(r,t.bT))},
 S(a){var s,r=null,q=A.Dh(!1,!1,this.Te(a),r,r,r,r,!0,r,r,new A.a7J(),r,r,r)
 this.a.toString
 s=this.d
