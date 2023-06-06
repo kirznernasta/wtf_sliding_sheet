@@ -14,19 +14,21 @@ import 'package:wtf_sliding_sheet/wtf_sliding_sheet.dart';
 
 const Color mapsBlue = Color(0xFF4185F3);
 
-void main() => kIsWeb
-    ? const WebWrapper(
-        app: MaterialApp(
-          title: 'Example App',
-          debugShowCheckedModeBanner: false,
-          home: Example(),
-        ),
-      )
-    : const MaterialApp(
-        title: 'Example App',
-        debugShowCheckedModeBanner: false,
-        home: Example(),
-      );
+void main() => runApp(
+      kIsWeb
+          ? const WebWrapper(
+              app: MaterialApp(
+                title: 'Example App',
+                debugShowCheckedModeBanner: false,
+                home: Example(),
+              ),
+            )
+          : const MaterialApp(
+              title: 'Example App',
+              debugShowCheckedModeBanner: false,
+              home: Example(),
+            ),
+    );
 
 class Example extends StatefulWidget {
   const Example({super.key});
