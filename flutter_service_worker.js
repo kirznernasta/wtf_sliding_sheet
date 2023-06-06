@@ -19,7 +19,7 @@ const RESOURCES = {"icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb0489
 "assets/FontManifest.json": "cf3c681641169319e61b61bd0277378f",
 "assets/AssetManifest.json": "99e1e954431ce3264b0a7bf23f6701a6",
 "assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf": "dd74f11e425603c7adb66100f161b2a5",
-"main.dart.js": "48db72895ce8a6465b07b969b64cf71e",
+"main.dart.js": "5aca0cac409cb4e4a96bafbb35412cc0",
 "canvaskit/skwasm.worker.js": "19659053a277272607529ef87acf9d8a",
 "canvaskit/canvaskit.js": "76f7d822f42397160c5dfc69cbc9b2de",
 "canvaskit/canvaskit.wasm": "f48eaf57cada79163ec6dec7929486ea",
